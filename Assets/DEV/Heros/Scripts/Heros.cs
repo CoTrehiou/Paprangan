@@ -12,8 +12,13 @@ public class Heros : MonoBehaviour
     [SerializeField] KeyCode _leftKey = KeyCode.Q;
     [SerializeField] KeyCode _rightKey = KeyCode.D;
 
+    [Header("Movement")]
     [SerializeField] Transform _herosTransform;
     [SerializeField] float speed = 5f;
+
+
+    [Header("Skills")]
+    [SerializeField] List<Skill> _listSkills = new List<Skill>();
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +26,7 @@ public class Heros : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    protected void Update()
     {
         Move(_forwardKey, Vector3.forward);
         Move(_backwardKey, Vector3.back);
@@ -29,7 +34,7 @@ public class Heros : MonoBehaviour
         Move(_rightKey, Vector3.right);
     }
 
-    private void Move(KeyCode key, Vector3 direction)
+    protected void Move(KeyCode key, Vector3 direction)
     {
 
         if (Input.GetKey(key))
