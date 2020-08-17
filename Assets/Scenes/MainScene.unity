@@ -131,6 +131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 22099516}
   - component: {fileID: 22099513}
+  - component: {fileID: 22099514}
   m_Layer: 0
   m_Name: Heros
   m_TagString: Untagged
@@ -152,6 +153,34 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &22099514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22099512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1878f8a1539bebb4f9b2d331af7324eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _forwardKey: 122
+  _backwardKey: 115
+  _leftKey: 113
+  _rightKey: 100
+  _herosTransform: {fileID: 22099516}
+  speed: 5
+  _keySkillOne: 0
+  _keySkillTwo: 0
+  _keySkillThree: 0
+  _keySkillFour: 0
+  _keySkillFive: 0
+  _skillOne: {fileID: 0}
+  _skillTwo: {fileID: 0}
+  _skillThree: {fileID: 0}
+  _skillFour: {fileID: 0}
+  _skillFive: {fileID: 0}
 --- !u!4 &22099516
 Transform:
   m_ObjectHideFlags: 0

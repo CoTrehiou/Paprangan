@@ -17,7 +17,9 @@ public class NumUpdate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         currentNum = finalTime - Time.time;
         textCouldown = currentNum;
+        */
     }
 }

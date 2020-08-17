@@ -18,7 +18,12 @@ public class Heros : MonoBehaviour
 
 
     [Header("Skills")]
-    [SerializeField] KeyCode _keySkillOne, _keySkillTwo, _keySkillThree, _keySkillFour, _keySkillFive;
+    [SerializeField] KeyCode _keySkillOne = KeyCode.H;
+    [SerializeField] KeyCode _keySkillTwo = KeyCode.J;
+    [SerializeField] KeyCode _keySkillThree = KeyCode.K;
+    [SerializeField] KeyCode _keySkillFour = KeyCode.L;
+    [SerializeField] KeyCode _keySkillFive = KeyCode.M;
+
     [SerializeField] Skill _skillOne, _skillTwo, _skillThree, _skillFour, _skillFive;
 
     // Start is called before the first frame update
