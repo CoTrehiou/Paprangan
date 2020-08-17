@@ -41,6 +41,10 @@ public class Heros : MonoBehaviour
         Move(_rightKey, Vector3.right);
 
         ActiveSkill(_keySkillOne, _skillOne);
+        ActiveSkill(_keySkillTwo, _skillTwo);
+        ActiveSkill(_keySkillThree, _skillThree);
+        ActiveSkill(_keySkillFour, _skillFour);
+        ActiveSkill(_keySkillFive, _skillFive);
     }
 
     private void ActiveSkill(KeyCode keySkill, Skill skillNumber)
