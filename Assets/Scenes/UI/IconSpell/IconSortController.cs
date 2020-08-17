@@ -9,7 +9,7 @@ public class IconSortController : MonoBehaviour
 
     private void Start() //when script open it suscribe to the EventManager --> it only suscribe !
     {
-        GameEvents.current.onSpellUseTrigger += SpellCouldown;
+        EventManager._instance.onSpellUseTrigger += SpellCouldown;
     }
 
     private void onDoorwayOpen() //c'est ici que l'on fait l'action
