@@ -38,7 +38,7 @@ public class CameraController : MonoBehaviour
         {
             mouvementSpeed = normalSpeed;
         }
-
+        /*
         if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
         {
             newPosition += (transform.forward * mouvementSpeed);
@@ -64,7 +64,7 @@ public class CameraController : MonoBehaviour
         {
             newRotation *= Quaternion.Euler(Vector3.up * -rotationAmount);
         }
-
+        */
         transform.position = Vector3.Lerp(transform.position, newPosition, Time.deltaTime* slideAmount);
         transform.rotation = Quaternion.Lerp(transform.rotation, newRotation, Time.deltaTime* slideAmount);
         //transform.position = newPosition;
