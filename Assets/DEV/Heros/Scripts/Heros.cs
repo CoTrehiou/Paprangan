@@ -12,9 +12,13 @@ public class Heros : MonoBehaviour
     [SerializeField] KeyCode _leftKey = KeyCode.Q;
     [SerializeField] KeyCode _rightKey = KeyCode.D;
 
+    [SerializeField] KeyCode _leftTurnKey = KeyCode.A;
+    [SerializeField] KeyCode _rightTurnKey = KeyCode.E;
+
     [Header("Movement")]
     [SerializeField] Transform _herosTransform;
     [SerializeField] float speed = 5f;
+    [SerializeField] float _speeTurn = 5f;
 
 
     [Header("Skills")]
@@ -45,6 +49,17 @@ public class Heros : MonoBehaviour
         ActiveSkill(_keySkillThree, _skillThree);
         ActiveSkill(_keySkillFour, _skillFour);
         ActiveSkill(_keySkillFive, _skillFive);
+
+        Rotate(_leftTurnKey);
+    }
+
+    private void Rotate(KeyCode _turnKey)
+    {
+        /*
+        if (_turnKey)
+        {
+            newRotation *= Quaternion.Euler(Vector3.up * -rotationAmount);
+        }*/
     }
 
     private void ActiveSkill(KeyCode keySkill, Skill skillNumber)
