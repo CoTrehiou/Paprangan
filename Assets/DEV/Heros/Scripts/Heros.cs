@@ -18,7 +18,7 @@ public class Heros : MonoBehaviour
     [Header("Movement")]
     [SerializeField] Transform _herosTransform;
     [SerializeField] float speed = 5f;
-    [SerializeField] float _speeTurn = 5f;
+    [SerializeField] float _speedTurn = 5f;
 
 
     [Header("Skills")]
@@ -29,6 +29,8 @@ public class Heros : MonoBehaviour
     [SerializeField] KeyCode _keySkillFive = KeyCode.M;
 
     [SerializeField] Skill _skillOne, _skillTwo, _skillThree, _skillFour, _skillFive;
+
+    float _rotationAmount = 2;
 
     // Start is called before the first frame update
     void Start()
@@ -50,16 +52,18 @@ public class Heros : MonoBehaviour
         ActiveSkill(_keySkillFour, _skillFour);
         ActiveSkill(_keySkillFive, _skillFive);
 
-        Rotate(_leftTurnKey);
+        Rotate(_leftTurnKey, -1);
+        Rotate(_rightTurnKey, 1);
     }
 
-    private void Rotate(KeyCode _turnKey)
+    private void Rotate(KeyCode _turnKey, int direction)
     {
-        /*
-        if (_turnKey)
+        
+        if (Input.GetKey(_turnKey))
         {
-            newRotation *= Quaternion.Euler(Vector3.up * -rotationAmount);
-        }*/
+            Vector3 newRotation = Vector3.up * direction * _rotationAmount;
+            transform.Rotate(newRotation);
+        }
     }
 
     private void ActiveSkill(KeyCode keySkill, Skill skillNumber)

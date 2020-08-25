@@ -15,7 +15,7 @@ public class Bomb : Skill
         if (canPutBomb)
         {
             base.ActiveSkill();
-        //Take current position of heros and place bomb in front of him
+            //Take current position of heros and place bomb in front of him
             PlaceBomb();
             StartCoroutine(PlaceBombCoroutine());
         }
