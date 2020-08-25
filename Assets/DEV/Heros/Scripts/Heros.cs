@@ -58,7 +58,6 @@ public class Heros : MonoBehaviour
 
     private void Rotate(KeyCode _turnKey, int direction)
     {
-        
         if (Input.GetKey(_turnKey))
         {
             Vector3 newRotation = Vector3.up * direction * _rotationAmount;
