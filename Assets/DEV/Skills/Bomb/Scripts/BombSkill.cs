@@ -24,10 +24,19 @@ public class BombSkill : Skill
         }
     }
 
+ /*   private void Update()
+    {
+        //Vector3 _positionHeros = _heros.transform.position;
+        Vector3 _positionBomb = _heros.transform.TransformPoint(Vector3.forward * _decalPlayer);//_heros.transform.position + _heros.transform.InverseTransformDirection(Vector3.forward * _decalPlayer) + _heros.transform.InverseTransformDirection(Vector3.forward * _decalPlayer); ;
+        Debug.DrawRay(_positionBomb, Vector3.up,Color.red);
+    }*/
     private void PlaceBomb()
     {
         canPutBomb = false;
-        Vector3 _positionBomb = new Vector3(_heros.transform.position.x, _heros.transform.position.y, _heros.transform.position.z + _decalPlayer);
+     //   Vector3 _positionBomb = new Vector3(_heros.transform.localPosition.x, _heros.transform.localPosition.y, _heros.transform.localPosition.z + _decalPlayer);
+     //   Debug.DrawRay(_positionBomb, Vector3.up);
+
+        Vector3 _positionBomb = _heros.transform.TransformPoint(Vector3.forward * _decalPlayer);
         Instantiate(_bombe, _positionBomb, Quaternion.identity);
         
     }

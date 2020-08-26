@@ -17,7 +17,7 @@ public class Bomb : MonoBehaviour
         yield return new WaitForSeconds(_delayExplosion);
         _meshBomb.enabled = false;
         _explosion.Play();
-        yield return new WaitForSeconds(_explosion.main.duration);
+        yield return new WaitForSeconds(1f);
         Debug.Log("A pété");
         Destroy(gameObject);
     }

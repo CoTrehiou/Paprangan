@@ -455,10 +455,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70926a7b3a6c2cb49ac8db367d26ca76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _delaySkill: 2
+  _delaySkill: 0.5
   _bombe: {fileID: 2461111012109792508, guid: 4e61bf3850e3eb0428f7dddb4b79c766, type: 3}
   _heros: {fileID: 5259092492313316406}
-  _decalPlayer: 1
+  _decalPlayer: 2
   _delayExplosion: 2
 --- !u!1001 &1647029678
 PrefabInstance:
@@ -653,7 +653,7 @@ PrefabInstance:
     - target: {fileID: 5259092492293470729, guid: 00759df595c41444b8144af5d7d20d4a,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.38976696
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5259092492293470729, guid: 00759df595c41444b8144af5d7d20d4a,
         type: 3}
@@ -663,7 +663,7 @@ PrefabInstance:
     - target: {fileID: 5259092492293470729, guid: 00759df595c41444b8144af5d7d20d4a,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9209136
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5259092492293470729, guid: 00759df595c41444b8144af5d7d20d4a,
         type: 3}
@@ -678,7 +678,7 @@ PrefabInstance:
     - target: {fileID: 5259092492293470729, guid: 00759df595c41444b8144af5d7d20d4a,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -45.88
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5259092492293470729, guid: 00759df595c41444b8144af5d7d20d4a,
         type: 3}
