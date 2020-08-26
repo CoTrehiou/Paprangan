@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Skill : MonoBehaviour
 {
-    [SerializeField] float _delaySkill;
+    [SerializeField] protected float _delaySkill;
     // Start is called before the first frame update
 
-    public void  ActiveSkill()
+    public virtual void  ActiveSkill()
     {
         EventManager._instance.OnSkillUsed(_delaySkill);
     }
