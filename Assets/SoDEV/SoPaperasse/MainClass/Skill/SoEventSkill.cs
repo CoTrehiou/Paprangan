@@ -10,7 +10,5 @@ public class SoEventSkill : ScriptableObject
     // il appartient à une unité --> récupérer le parent du script
     public MoControllable soUnit;//lanceur
     
-    public virtual void SoActiveSkill()
-    {
-    }
+
 }

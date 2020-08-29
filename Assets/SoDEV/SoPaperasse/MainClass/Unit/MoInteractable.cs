@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MoInteractable : MonoBehaviour
 {
+
     // Start is called before the first frame update
     void Start()
     {
@@ -15,4 +16,6 @@ public class MoInteractable : MonoBehaviour
     {
         
     }
+
+
 }

@@ -14,8 +14,9 @@ using UnityEngine;
  */
 public class MoControllable : MonoBehaviour
 {
-    private MonoSkill _skillOne, _skillTwo, _skillThree, _skillFour, _skillFive;
-
+    public MonoSkill _skillOne, _skillTwo, _skillThree, _skillFour, _skillFive;
+    public FloatReference _speed;
+    [SerializeField] Transform _MoControllableTransform;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,5 +27,12 @@ public class MoControllable : MonoBehaviour
     void Update()
     {
 
+    }
+
+    public void Move(Vector3 direction)
+    {
+        Debug.Log("Ok Bro...");
+        _MoControllableTransform.Translate(direction * Time.deltaTime * _speed.Variable.Value);
+        Debug.Log(this);
     }
 }

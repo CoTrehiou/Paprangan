@@ -5,5 +5,8 @@ using UnityEngine;
 public class MonoSkill : MonoBehaviour
 {
     public MoControllable _soUnit;
-    public SoEventSkill soEventSkill;
+
+    public virtual void SoActiveSkill()
+    {
+    }
 }
